@@ -1,1 +1,1 @@
-# lab-1-estad-stica
+# lab-1-estadística
