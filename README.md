@@ -102,7 +102,9 @@ El cálculo manual consiste en realizar el cociente entre la desviación estánd
 ## INSTRUCCIONES 
 
 ## REQUERIMIENTOS
-
+- Python 3.11
+- Spyder 6.0
+- Librerias como: wfdb, matplotlib, numpy, scipy.stats 
 ## REFERENCIAS
 
 ## AUTORES
