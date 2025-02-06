@@ -76,6 +76,21 @@ Para el cálculo manual se hace una sumatoria de la resta de cada uno de los dat
       Desviación estándar con librerias: 0.0752
 
 ### COEFICIENTE DE VARIACIÓN
+Por último, el coeficiente de variación se define como una medida de dispersión que hace una comparación de los valores obtenidos de la desviación estándar y la media por medio de un cociente y si se desea dar como un porcentaje se multiplica por 100. Hablando con el EMG, este es más usado para comparar valores y estudios de diferentes pacientes con diferentes valores de actividades musculares. 
+
+El cálculo manual consiste en realizar el cociente entre la desviación estándar y la media, como se explicó anteriormente y con “Python” simplemente se realiza esa división entre los valores obtenidos en los ítems anteriores con ayuda de “numpy”. Los respectivos códigos, cálculos y resultados se muestran enseguida. 
+
+      # Cálculo manual
+      coeficiente_de_variacion = (desviacion_estandar/ media) if media != 0 else float ('nan')
+      print(f"Coeficiente de variación: {coeficiente_de_variacion:.4f}")
+      
+      # Cálculo con funciones de Python
+      coeficiente_variacion_librerias = (desviacion_librerias / media_librerias) if media_librerias != 0 else np.nan
+      print(f"Coeficiente de variación con librerias: {coeficiente_variacion_librerias:.4f}")
+      
+      # Resultados obtenidos
+      Coeficiente de variación: -151.2735
+      Coeficiente de variación con librerias: -151.2735
 
 ## SNR
 ![alt](RuidoGaussiano.png)
