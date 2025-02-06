@@ -56,6 +56,24 @@ Este valor fue calculado de manera tanto manual como por medio de funciones mate
       Media de la señal con librerias: -0.0005
 
 ### DESVIACIÓN ESTÁNDAR
+La desviación estándar nos muestra que tanto se alejan los datos de las muestras con respecto a la media, en el contexto de la electromiografía nos puede decir la consistencia de la actividad muscular, que tanto cambio hay en la actividad muscular y si puede ser de manera impredecible por contracciones musculares irregulares. 
+
+Para el cálculo manual se hace una sumatoria de la resta de cada uno de los datos con la media obtenida con anterioridad, se eleva al cuadrado, se divide por la cantidad de datos y por último se le saca la raíz. Para el cálculo directo de “Python” se implementa la función “numpy.std()” nuevamente perteneciente de la librería de “numpy”. A continuación, se presenta la respectiva programación y solución obtenida. 
+
+      # Desviacion estandar
+      desviacion = 0
+      for i in range(len(signal)):
+          desviacion += (signal[i] - media) ** 2
+      desviacion_estandar = (desviacion/len(signal)) ** 0.5
+      print(f"Desviación estándar: {desviacion_estandar:.4f}")
+      
+      # Desviación estándar con funciones de python
+      desviacion_librerias = np.std(signal)
+      print(f"Desviación estándar con librerias: {desviacion_librerias:.4f}")
+      
+      # Resultados
+      Desviación estándar: 0.0752
+      Desviación estándar con librerias: 0.0752
 
 ### COEFICIENTE DE VARIACIÓN
 
