@@ -101,6 +101,14 @@ El cálculo manual consiste en realizar el cociente entre la desviación estánd
 ![alt](RuidoArtefacto.png)
 ## INSTRUCCIONES 
 
+1) Primeramente descargar o copiar y pegar el código de Python subido en este repositorio, el cuál esta guardado como "lab1V1.py", en el compilador que desee preferiblemente "Spyder". Cabe recalcar que debe asegurarse que se encuentren las librerias enlistadas en los requerimientos para que pueda compilarse adecuadamente el programa y muestre tanto las gráficas deseadas como los resultados de los cálculos.
+
+2) Descargar los archivos que contienen los datos de la señal electromiográfica incluidos también en el presente repositorio con el nombre de “S0603_DT_V2.dat” y “S0603_DT_V2.hea”. Se aconseja que se guarden los archivos de este inciso y el anterior en la misma carpeta para su fácil acceso.
+
+3) Correr el programa, esperar a que se compile por completo y si todo está en orden, se verán los resultados en el terminal de comandos de la manera que se muestra en la siguiente figura y sus respectivas gráficas.
+
+![alt](terminal.jpg)
+
 ## REQUERIMIENTOS
 - Python 3.11
 - Spyder 6.0
